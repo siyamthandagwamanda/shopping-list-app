@@ -1,0 +1,1 @@
+add moodboard, step-by-step plan and pseudocode
