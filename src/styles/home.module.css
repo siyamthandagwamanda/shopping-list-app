@@ -1,136 +1,185 @@
 .home {
-  background-color: #f7f5ef;
-  padding: 50px 20px; 
+    background-color: #f7f5ef;
+    min-height: 100vh;
+    padding: 80px 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
 }
 
 .hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center; 
-  gap: 30px;
-  max-width: 1200px;
-  margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 60px;
 }
 
 .content {
-  width: 100%;
+    flex: 1;
+    min-width: 0;
+    text-align: left;
 }
 
 .title {
-  font-size: 32px; 
-  line-height: 1.2;
-  color: #0d1b3e;
-  margin: 0 0 16px;
+    margin: 0 0 20px;
+    padding: 0;
+
+    color: #0d1b3e;
+
+    font-size: 56px;
+    line-height: 1.15;
+    font-weight: 700;
 }
 
 .highlight {
-  color: #4f7df3;
+    color: #4f7df3;
 }
 
 .description {
-  font-size: 16px; 
-  color: #667085;
-  margin-bottom: 25px;
-  line-height: 1.5;
+    max-width: 620px; 
+    margin: 0 0 32px;
+    padding: 0;
+
+    color: #667085;
+
+    font-size: 18px;
+    line-height: 1.6;
 }
 
 .buttons {
-  display: flex;
-  flex-direction: column; 
-  gap: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+    gap: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.primaryButton,
+.secondaryButton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: auto;
+    min-height: 50px; 
+    padding: 14px 28px;
+
+    box-sizing: border-box;
+    border-radius: 10px;
+
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.2;
+
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+
+    transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.1s ease;
+}
+
+.primaryButton:active,
+.secondaryButton:active {
+    transform: scale(0.98); 
 }
 
 .primaryButton {
-  background-color: #0d1b3e;
-  color: white;
-  text-decoration: none;
-  padding: 14px 20px; 
-  border-radius: 8px;
-  font-weight: bold;
-  cursor: pointer;
-  text-align: center;
+    background-color: #0d1b3e;
+    color: #ffffff;
+    border: 1px solid #0d1b3e;
 }
 
 .primaryButton:hover {
-  background-color: #4f7df3;
+    background-color: #4f7df3;
+    border-color: #4f7df3;
 }
 
 .secondaryButton {
-  background-color: white;
-  color: #0d1b3e;
-  text-decoration: none;
-  padding: 14px 20px;
-  border: 1px solid #e1e5ec;
-  border-radius: 8px;
-  font-weight: bold;
-  cursor: pointer;
-  text-align: center;
+    background-color: #ffffff;
+    color: #0d1b3e;
+    border: 1px solid #e1e5ec;
 }
 
 .secondaryButton:hover {
-  background-color: #eaf1ff;
-  border-color: #4f7df3;
+    background-color: #eaf1ff;
+    border-color: #4f7df3;
 }
 
 .imageWrapper {
-  width: 100%;
-  display: flex;
-  justify-content: center;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    min-width: 0;
 }
 
 .image {
-  width: 100%;
-  max-width: 400px; 
-  height: auto;
-  border-radius: 20px;
-}
-
-@media (min-width: 481px) {
-  .title {
-    font-size: 40px; 
-  }
-
-  .buttons {
-    flex-direction: row; 
-    justify-content: center;
-  }
+    display: block;
+    width: 100%;
+    max-width: 540px;
+    height: auto;
+    border-radius: 20px;
 }
 
 
-@media (min-width: 768px) {
-  .home {
-    padding: 70px 20px; 
-  }
+@media (max-width: 900px) {
+    .hero {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 50px;
+    }
 
-  .hero {
-    flex-direction: row; 
-    text-align: left; 
-    gap: 60px;
-  }
+    .content {
+        text-align: center; 
+        flex-direction: column;
+        align-items: center;
+    }
 
-  .content {
-    flex: 1;
-  }
+    .description {
+        max-width: 100%;
+    }
 
-  .title {
-    font-size: 56px;
-    line-height: 1.1;
-  }
+    .buttons {
+        justify-content: center;
+    }
 
-  .description {
-    font-size: 18px;
-  }
+    .imageWrapper {
+        justify-content: center;
+    }
+}
 
-  .buttons {
-    justify-content: flex-start; 
-  }
+@media (max-width: 480px) {
+    .home {
+        padding: 40px 16px;
+    }
 
-  .imageWrapper {
-    flex: 1;
-  }
+    .title {
+        font-size: 36px;
+        line-height: 1.2;
+    }
 
-  .image {
-    max-width: 560px; 
-  }
+    .description {
+        font-size: 16px;
+        margin-bottom: 24px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+    }
+
+    .primaryButton,
+    .secondaryButton {
+        width: 100%; 
+    }
 }
