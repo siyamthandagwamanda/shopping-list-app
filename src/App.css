@@ -1,0 +1,209 @@
+/* Global Reset & Page Background */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #09142e;
+}
+
+/* Header Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #09142e;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 12px;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    border: 1px solid transparent;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    background-color: #ffffff;
+    color: #09142e;
+}
+
+/* Home / Hero Section (Minimized vertical spacing) */
+.home {
+    background-color: #ffffff;
+    min-height: 1200px; 
+    padding: 30px 50px; 
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+}
+
+.hero {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: row; /* Strict side-by-side */
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 60px;
+}
+
+.content {
+    flex: 1;
+    min-width: 0;
+    text-align: left;
+}
+
+.title {
+    margin: 0 0 16px;
+    padding: 0;
+
+    color: #0d1b3e;
+
+    font-size: 48px;
+    line-height: 1.15;
+    font-weight: 800;
+}
+
+.highlight {
+    color: #6c63ff;
+}
+
+.description {
+    max-width: 480px;
+    margin: 0 0 28px;
+    padding: 0;
+
+    color: #555c6d;
+
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+
+    gap: 12px;
+    margin: 0;
+    padding: 0;
+}
+
+.primaryButton,
+.secondaryButton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: auto;
+    min-height: 44px;
+    padding: 12px 22px;
+
+    box-sizing: border-box;
+    border-radius: 8px;
+
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.2;
+
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.primaryButton {
+    background-color: #09142e;
+    color: #ffffff;
+    border: 1px solid #09142e;
+}
+
+.primaryButton:hover {
+    background-color: #1f2d4f;
+}
+
+.secondaryButton {
+    background-color: #ffffff;
+    color: #09142e;
+    border: 1px solid #d1d5db;
+}
+
+.secondaryButton:hover {
+    background-color: #f3f4f6;
+}
+
+.imageWrapper {
+    flex: 1.2;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    min-width: 0;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    max-width: 580px;
+    height: auto;
+}
+
+
+.footer {
+    background-color: #09142e;
+    color: white;
+    padding: 30px 40px 15px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+.section {
+    flex: 1;
+}
+
+.section h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+
+.section p {
+    color: #b9c4d8;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 25px; /* Reduced gap */
+    padding-top: 15px;
+    border-top: 1px solid #1f2d4f;
+    color: #b9c4d8;
+    font-size: 13px;
+}
