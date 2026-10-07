@@ -1,0 +1,8 @@
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #f7f5ef;
+  padding: 50px 20px;
+  min-height: 100%;
+}
